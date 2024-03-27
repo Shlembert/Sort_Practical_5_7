@@ -24,6 +24,16 @@ public class SumOfEvenNumbersInArray : MonoBehaviour
     {
         // –еализуйте подсчет четных чисел использу€ цикл и
         // верните вместо 0 полученный результат 
-        return 0;
+        int sum = 0;
+
+        foreach (int number in array)
+        {
+            if (number % 2 == 0)
+            {
+                sum += number;
+            }
+        }
+
+        return sum;
     }
 }

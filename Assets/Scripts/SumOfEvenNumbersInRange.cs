@@ -26,7 +26,17 @@ public class SumOfEvenNumbersInRange : MonoBehaviour
     {
         // –еализуйте подсчет четных чисел использу€ цикл и
         // верните вместо 0 полученный результат 
-        return 0;
+        int sum = 0;
+
+        for (int i = min; i <= max; i++)
+        {
+            if (i % 2 == 0)
+            {
+                sum += i;
+            }
+        }
+
+        return sum;
     }
 }
 
